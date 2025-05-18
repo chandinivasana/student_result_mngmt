@@ -382,7 +382,7 @@ def view_failed_list(threshold=40.0):
         print(f"{stud['id']:<2} | {name:<19} | {stud['class_section']:<5} | {stud['percentage']:.2f}%")
     print("-------------------------------------------")
 
-# --- Search Functions ---
+
 def search_students():
     if CURRENT_USER_ROLE != "admin": print("Access Denied."); return
     term = input("\nSearch Student (ID or Name part): ").strip().lower()
